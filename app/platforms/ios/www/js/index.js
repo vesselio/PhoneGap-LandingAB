@@ -44,8 +44,8 @@
 
         vesselab.setABListener(function(testVariation){
             app.hideLoading();
-            app.show("baseline");
-            console.log("TestName :" +  testName + " Variation " + testVariation);
+            app.show("variationA");
+            console.log("testVariation :" + testVariation);
         }, function(error){
             app.hideLoading();
             app.show("baseline");
