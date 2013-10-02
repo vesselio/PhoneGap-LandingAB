@@ -44,10 +44,10 @@
 		5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0E66E1729F460000DC89A /* ImageIO.framework */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
-		6AC8076917FBDA7300AC08F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC8076817FBDA7300AC08F2 /* libsqlite3.dylib */; };
-		6AC8076B17FBDA8A00AC08F2 /* Vessel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC8076A17FBDA8A00AC08F2 /* Vessel.framework */; };
-		6AC8076D17FBDAB600AC08F2 /* VesselPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D331BDBFD4441BB582E4E3 /* VesselPlugin.m */; };
 		6AC94ED717FB89C700CBE968 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC94ED617FB89C700CBE968 /* AdSupport.framework */; };
+		6AD26CF117FCE8C100475A39 /* VesselPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D331BDBFD4441BB582E4E3 /* VesselPlugin.m */; };
+		6AD26CF317FCE8E900475A39 /* Vessel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD26CF217FCE8E900475A39 /* Vessel.framework */; };
+		6AD26CF417FCE8F600475A39 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC8076817FBDA7300AC08F2 /* libsqlite3.dylib */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
@@ -113,8 +113,8 @@
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		6AC8076817FBDA7300AC08F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		6AC8076A17FBDA8A00AC08F2 /* Vessel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Vessel.framework; sourceTree = "<group>"; };
 		6AC94ED617FB89C700CBE968 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6AD26CF217FCE8E900475A39 /* Vessel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Vessel.framework; sourceTree = "<group>"; };
 		6C923D9226C24B658C5CDE7A /* VesselPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VesselPlugin.h; path = com.vessel.abplugin/VesselPlugin.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloWorld-Info.plist"; path = "../HelloWorld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC8076B17FBDA8A00AC08F2 /* Vessel.framework in Frameworks */,
-				6AC8076917FBDA7300AC08F2 /* libsqlite3.dylib in Frameworks */,
+				6AD26CF417FCE8F600475A39 /* libsqlite3.dylib in Frameworks */,
+				6AD26CF317FCE8E900475A39 /* Vessel.framework in Frameworks */,
 				6AC94ED717FB89C700CBE968 /* AdSupport.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */,
@@ -236,7 +236,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6AC8076A17FBDA8A00AC08F2 /* Vessel.framework */,
+				6AD26CF217FCE8E900475A39 /* Vessel.framework */,
 				6AC8076817FBDA7300AC08F2 /* libsqlite3.dylib */,
 				6AC94ED617FB89C700CBE968 /* AdSupport.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
@@ -438,7 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC8076D17FBDAB600AC08F2 /* VesselPlugin.m in Sources */,
+				6AD26CF117FCE8C100475A39 /* VesselPlugin.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
