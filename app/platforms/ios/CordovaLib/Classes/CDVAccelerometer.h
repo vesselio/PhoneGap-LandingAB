@@ -17,17 +17,23 @@
  under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
+#import <UIKit/UIKit.h>
+#import "CDVPlugin.h"
 
-@interface NSError (JSONMethods)
+@interface CDVAccelerometer : CDVPlugin <UIAccelerometerDelegate>
+{
+    double x;
+    double y;
+    double z;
+    NSTimeInterval timestamp;
+}
 
-- (NSString*)JSONRepresentation;
+@property (readonly, assign) BOOL isRunning;
+@property (nonatomic, strong) NSString* callbackId;
 
-@end
+- (CDVAccelerometer*)init;
 
-@interface CLLocation (JSONMethods)
-
-- (NSString*)JSONRepresentation;
+- (void)start:(CDVInvokedUrlCommand*)command;
+- (void)stop:(CDVInvokedUrlCommand*)command;
 
 @end

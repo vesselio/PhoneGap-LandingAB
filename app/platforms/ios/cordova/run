@@ -54,10 +54,6 @@ _parseArgs()
       "--target")
         TARGET=${OPTION_RESULT[1]}
         ;;
-    "--device")
-      echo "Targeting a device is not supported currently."
-      exit 1
-      ;;
     esac
   done
 }
@@ -107,7 +103,10 @@ PROJECT_NAME=$(basename "$XCODEPROJ" .xcodeproj)
 
 APP_PATH="$PROJECT_PATH/build/$PROJECT_NAME.app"
 
-"$CORDOVA_PATH/build" || exit $?
+if [ ! -d "$APP_PATH" ]; then
+	echo "Project '$APP_PATH' is not built. Building."
+    $CORDOVA_PATH/build || exit $?
+fi
 
 if [ ! -d "$APP_PATH" ]; then
 	echo "$APP_PATH not found to emulate."
