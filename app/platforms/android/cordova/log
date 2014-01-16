@@ -16,5 +16,8 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# filter out nativeGetEnabledTags spam from latest sdk bug.
-adb logcat | grep -v nativeGetEnabledTags
+set -e
+
+CORDOVA_PATH=$( cd "$( dirname "$0" )/.." && pwd )
+
+bash "$CORDOVA_PATH"/cordova/lib/cordova log "$@"

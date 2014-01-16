@@ -48,7 +48,7 @@
             console.log("testVariation :" + testVariation);
         }, function(error){
             app.hideLoading();
-            app.show("baseline");
+            app.show("variationB");
             console.log("Test not available");
         });
     },
